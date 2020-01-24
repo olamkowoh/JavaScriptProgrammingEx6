@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        alert('Hello from embedded JavaScript. This is my first JavaScript and Html application.');
+        let a = 13;
+        let b = 19;
+        alert(a + b);
+        let c = prompt('value 1: ', 0);
+        let d = prompt('value 2: ', 0);
+        let e = c + d;
+
+        let f = parseInt(c);
+        let g = parseInt(d);
+        let h = f + g;
+        alert(h);
+        let isTheInputNumeric = prompt(`Enter an alpha character`);
+        alert(isNaN(isTheInputNumeric));
+        console.log(e)
+        try {
+            let numberOrLetterInput = prompt('Please enter a letter or number');
+            if (isNaN(numberOrLetterInput)) {
+                throw new console.error('Inputs are invalid');
+            }
+        } catch (error) {
+            alert(error.message);
+        }
+    </script>
+    <script>
+        src = "app.js"
+    </script>
+    <title>HTML and JavaScript Exercise</title>
+</head>
+
+<body>
+    <p>Hello world!</p>
+    <script>
+        document.writeln(`<p>The input <strong>${isTheInputNumeric}</strong>) is not numeric, true or false?</P>`);
+        document.writeln(`<p>${isNaN(isTheInputNumeric)}</p>`);
+        document.writeln(`<p>My current url is : <em>${windows.location}</em></p>`);
+    </script>
+</body>
+
+</html>
